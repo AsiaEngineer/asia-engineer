@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asia Engineer - Kontraktor Profesional untuk Bangun & Renovasi Rumah di Temanggung, Semarang, Jogja. Bergaransi 2 Tahun.">
+    <title>Asia Engineer - Kontraktor Profesional Temanggung, Semarang, Jogja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <style>
+        /* ============================================
+           CSS RESET & BASE STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: white;
+            color: #333;
+            line-height: 1.3;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #e67e22;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #e67e22, #d35400);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #e67e22, #d35400);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(230, 126, 34, 0.3);
+            background: linear-gradient(to right, #f39c12, #e67e22);
+        }
+        
+        .btn-large {
+            padding: 18px 45px;
+            font-size: 1.3rem;
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(to right, #25D366, #128C7E);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-whatsapp:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn-whatsapp:hover:after {
+            left: 100%;
+        }
+        
+        /* ============================================
+           HEADER STYLES - LOGO BULAT
+           ============================================ */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1900;
+
+    background: linear-gradient(900deg, black 10%, #f9f9f9 100%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 6px solid #e67e22;
+}
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* LOGO BULAT */
+        .logo-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e67e22;
+            box-shadow: 0 4px 10px rgba(230, 126, 34, 0.2);
+            background-color: white;
+            padding: 3px;
+        }
+        
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #e67e22;
+        }
+        
+        .logo-subtext {
+            font-size: 1rem;
+            color: black;
+            margin-top: 1px;
+            display: block;
+        }
+        
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .phone-number {
+            display: flex;
+            align-items: center;
+            color: #e67e22;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .phone-number i {
+            margin-right: 8px;
+        }
+        
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-weight: 700;
+        }
+        
+        .hero h1 span {
+            color: #e67e22;
+            background: rgba(255,255,255,0.9);
+            padding: 0 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            color: #f1f1f1;
+            margin-bottom: 35px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 20px 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .stat-number {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #e67e22;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: #ddd;
+            font-weight: 500;
+        }
+        
+        /* ============================================
+           BENEFIT SECTION - IKON OTOMATIS BULAT & PUTIH
+           ============================================ */
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .benefit-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 5px solid #e67e22;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(230, 126, 34, 0.15);
+        }
+        
+        .benefit-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #e67e22, #f39c12);
+        }
+        
+        /* CONTAINER IKON BULAT */
+        /* ============================================
+   BENEFIT SECTION - IKON OTOMATIS BULAT
+   ============================================ */
+.benefit-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #e67e22, #f39c12);
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.2);
+    overflow: hidden;
+}
+
+/* GAMBAR OTOMATIS BULAT */
+.benefit-icon img {
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 70% !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 0 auto !important;
+    padding: 1.5px !important;
+    background: white !important;
+}
+        
+        /* Efek hover untuk ikon */
+        .benefit-card:hover .benefit-icon {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Warna berbeda untuk setiap ikon benefit */
+        .benefit-card:nth-child(1) .benefit-icon {
+            background: linear-gradient(135deg, #e67e22, #f39c12); /* Oranye */
+        }
+        
+        .benefit-card:nth-child(2) .benefit-icon {
+            background: linear-gradient(135deg, #3498db, #2980b9); /* Biru */
+        }
+        
+        .benefit-card:nth-child(3) .benefit-icon {
+            background: linear-gradient(135deg, #2ecc71, #27ae60); /* Hijau */
+        }
+        
+        .benefit-card:nth-child(4) .benefit-icon {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad); /* Ungu */
+        }
+        
+        .benefit-card:nth-child(5) .benefit-icon {
+            background: linear-gradient(135deg, #e74c3c, #c0392b); /* Merah */
+        }
+        
+        .benefit-card:nth-child(6) .benefit-icon {
+            background: linear-gradient(135deg, #1abc9c, #16a085); /* Tosca */
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* ============================================
+           PORTFOLIO SECTION
+           ============================================ */
+        .portfolio-section {
+            background-color: white;
+        }
+        
+        .project-container {
+            margin-bottom: 80px;
+            position: relative;
+        }
+        
+        .project-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .project-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: #e67e22;
+        }
+        
+        .project-slider {
+            width: 100%;
+            height: 500px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .project-slide {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f8f9fa;
+            position: relative;
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-slide:hover .project-image {
+            transform: scale(1.05);
+        }
+        
+        .project-description {
+            text-align: center;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .project-slider .swiper-button-next,
+        .project-slider .swiper-button-prev {
+            color: #e67e22;
+            background: rgba(255, 255, 255, 0.9);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .project-slider .swiper-button-next:hover,
+        .project-slider .swiper-button-prev:hover {
+            background: #e67e22;
+            color: white;
+        }
+        
+        .project-slider .swiper-pagination-bullet {
+            background: #ccc;
+            opacity: 1;
+            width: 12px;
+            height: 12px;
+        }
+        
+        .project-slider .swiper-pagination-bullet-active {
+            background: #e67e22;
+        }
+        
+        /* ============================================
+           VIDEO SECTION
+           ============================================ */
+        .video-section {
+            background-color: #fef6ec;
+        }
+        
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 2px solid #f0f0f0;
+            margin-bottom: 30px;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        /* ============================================
+           BONUS SECTION
+           ============================================ */
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .bonus-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+            position: relative;
+        }
+        
+        .bonus-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(230, 126, 34, 0.15);
+            border-color: #e67e22;
+        }
+        
+        .bonus-image {
+            height: 200px;
+            background: linear-gradient(135deg, #fef6ec, #fff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e67e22;
+            font-size: 4rem;
+            position: relative;
+        }
+        
+        .bonus-image img {
+            width: 400px;
+            height: 200px;
+            object-fit: contain;
+        }
+        
+        .bonus-content {
+            padding: 25px;
+        }
+        
+        .bonus-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #e67e22, #f39c12);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 8px rgba(230, 126, 34, 0.2);
+        }
+        
+        .bonus-content h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .bonus-content p {
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        /* ============================================
+           TESTIMONIAL SECTION
+           ============================================ */
+        .social-proof {
+            background-color: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+            border: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: #e67e22;
+            box-shadow: 0 10px 25px rgba(230, 126, 34, 0.1);
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 5rem;
+            color: #fef6ec;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e67e22, #f39c12);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .author-info h4 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        /* ============================================
+           OFFER SECTION
+           ============================================ */
+        .offer-container {
+            background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            box-shadow: 0 15px 40px rgba(230, 126, 34, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .offer-container:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            transform: rotate(15deg);
+            opacity: 0.3;
+        }
+        
+        .offer-container h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .offer-container p {
+            color: rgba(255, 255, 255, 0.95);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .offer-price {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 30px 0;
+            color: white;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .offer-price:before {
+            content: 'Rp';
+            font-size: 2rem;
+            position: relative;
+            top: -20px;
+            margin-right: 5px;
+        }
+        
+        /* ============================================
+           HANDLING OBJECTION SECTION
+           ============================================ */
+        .handling-objection {
+            background-color: #fef6ec;
+        }
+        
+        .objection-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .objection-content h2 {
+            font-size: 2.4rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .objection-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .highlight {
+            background-color: rgba(230, 126, 34, 0.1);
+            color: #d35400;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-weight: 700;
+            border: 1px solid rgba(230, 126, 34, 0.3);
+        }
+        
+        .urgency-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* ============================================
+           WHATSAPP FLOATING BUTTON
+           ============================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        .whatsapp-text {
+            position: absolute;
+            right: 70px;
+            background: #25D366;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .whatsapp-float:hover .whatsapp-text {
+            opacity: 1;
+        }
+        
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 50px 0 20px;
+            border-top: 2px solid #e67e22;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #e67e22;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: #e67e22;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: #e67e22;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: #e67e22;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+        
+        /* ============================================
+           RESPONSIVE STYLES
+           ============================================ */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.7rem;
+            }
+            
+            .project-slider {
+                height: 400px;
+            }
+            
+            .offer-price {
+                font-size: 3.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .offer-container {
+                padding: 30px 20px;
+            }
+            
+            .offer-price {
+                font-size: 3rem;
+            }
+            
+            .project-slider {
+                height: 350px;
+            }
+            
+            .header-contact .btn {
+                display: none;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.7rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .project-slider {
+                height: 300px;
+            }
+            
+            .hero {
+                padding: 80px 0 60px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .stats {
+                gap: 20px;
+            }
+            
+            .stat-item {
+                padding: 15px 20px;
+            }
+            
+            .stat-number {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/6282118107431?text=Halo%20Asia%20Engineer%2C%20saya%20tertarik%20dengan%20layanan%20Anda%20setelah%20melihat%20landing%20page%20ini.%20Bisa%20konsultasi%20tentang%20proyek%20saya%3F" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-text">Konsultasi Gratis</div>
+    </a>
+
+    <!-- HEADER SECTION DENGAN LOGO BULAT -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <!-- LOGO BULAT -->
+                <img src="asia-engineer-logo.png" alt="Asia Engineer Logo" class="logo-image" id="logo-image">
+                <div>
+                    <div class="logo-text" id="logo-text">Asia Engineer</div>
+                    <div class="logo-subtext">Bangun & Renovasi Profesional</div>
+                </div>
+            </div>
+            <div class="header-contact">
+                <div class="phone-number">
+                  
+                </div>
+                <a href="https://wa.me/6282118107431?text=Halo%20Asia%20Engineer%2C%20saya%20tertarik%20dengan%20layanan%20Anda%20setelah%20melihat%20landing%20page%20ini.%20Bisa%20konsultasi%20tentang%20proyek%20saya%3F" class="btn" target="_blank"><i class="fas fa-comments"></i> Konsultasi Gratis</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Pembuka utama) -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Stop Khawatir dengan <span>Proyek Bangun & Renovasi</span> Anda!</h1>
+            <p>Percayakan kepada <strong>Asia Engineer</strong> - Kontraktor Profesional dengan <strong>Garansi 2 Tahun</strong> untuk hasil terbaik. Melayani Temanggung, Semarang, Jogja Dan Sekitarnya.</p>
+            <a href="https://wa.me/6282118107431?text=Halo%20Asia%20Engineer%2C%20saya%20tertarik%20dengan%20layanan%20Anda%20setelah%20melihat%20landing%20page%20ini.%20Saya%20ingin%20konsultasi%20GRATIS%20tentang%20proyek%20%5Bsebutkan%20jenis%20proyek%5D%20saya.%20Bisa%20dibantu%3F" class="btn btn-large btn-whatsapp"><i class="fab fa-whatsapp"></i> KONSULTASI GRATIS via WhatsApp</a>
+            
+            <div class="urgency-badge">⏰ TERBATAS: Konsultasi Gratis Hanya untuk 10 Klien Bulan Ini</div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">63+</div>
+                    <div class="stat-label">Proyek Terselesaikan</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Klien Puas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Tahun Garansi</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Transparan Biaya</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFIT SECTION DENGAN IKON OTOMATIS BULAT -->
+    <section id="benefit" class="container">
+        <div class="section-title">
+            <h2>Kenapa 100+ Klien Memilih Asia Engineer?</h2>
+            <p>Inilah yang membuat kami berbeda dari kontraktor lainnya</p>
+        </div>
+        
+        <div class="benefit-grid">
+            <!-- Benefit 1 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="harga-transparan.png" alt="Harga Transparan">
+                </div>
+                <h3>Harga 100% Transparan</h3>
+                <p>Tidak ada biaya tambahan tersembunyi. Anda tahu persis apa yang Anda bayar dari awal hingga akhir proyek.</p>
+            </div>
+            
+            <!-- Benefit 2 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="tim-profesional.png" alt="Tim Profesional">
+                </div>
+                <h3>Tim Ahli Berpengalaman</h3>
+                <p>Dikerjakan oleh tenaga profesional dengan sertifikasi dan pengalaman minimal 5 tahun di bidang konstruksi.</p>
+            </div>
+            
+            <!-- Benefit 3 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="tepat-waktu.png" alt="Tepat Waktu">
+                </div>
+                <h3>Garansi Tepat Waktu</h3>
+                <p>Kami berikan kompensasi jika proyek terlambat dari jadwal yang disepakati. Janji kami adalah komitmen.</p>
+            </div>
+            
+            <!-- Benefit 4 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="garansi-dua-tahun.png" alt="Garansi">
+                </div>
+                <h3>Garansi 2 Tahun</h3>
+                <p>Garansi pekerjaan terlama di industri. Bukti kepercayaan diri kami pada kualitas pekerjaan tim Asia Engineer.</p>
+            </div>
+            
+            <!-- Benefit 5 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="material.png" alt="Material Berkualitas">
+                </div>
+                <h3>Material Grade A+</h3>
+                <p>Hanya menggunakan material berkualitas tinggi dengan sertifikat asli. Tidak ada kompromi dengan kualitas.</p>
+            </div>
+            
+            <!-- Benefit 6 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="di-dampingi.png" alt="Layanan 24/7">
+                </div>
+                <h3>Dampingi Hingga Selesai</h3>
+                <p>Manager proyek mendampingi Anda dari awal hingga akhir. Respon cepat 24/7 untuk kebutuhan darurat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION (Galeri proyek) -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bukti Nyata Kualitas Kerja Kami</h2>
+                <p>63+ proyek terselesaikan dengan hasil yang memuaskan klien</p>
+            </div>
+
+            <!-- PROYEK 1: RENOVASI ATAP -->
+            <div class="project-container">
+                <h3 class="project-title">Renovasi Atap Rumah - Pak Budi, Temanggung</h3>
+                <div class="project-slider swiper projectSwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide project-slide">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="project-image" alt="Renovasi Atap 1">
+                        </div>
+                        <div class="swiper-slide project-slide">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="project-image" alt="Renovasi Atap 2">
+                        </div>
+                        <div class="swiper-slide project-slide">
+                            <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="project-image" alt="Renovasi Atap 3">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p class="project-description"><strong>Hasil:</strong> Atap bocor yang sudah 5 tahun mengganggu kini terbebas dari rembesan air. <strong>Waktu pengerjaan:</strong> 2 minggu. <strong>Klien berkata:</strong> "Akhirnya kamar tidur saya kering meski hujan deras!"</p>
+            </div>
+
+            <!-- PROYEK 2: PEMBANGUNAN RUMAH SEMARANG -->
+            <div class="project-container">
+                <h3 class="project-title">Bangun Rumah 2 Lantai - Keluarga Sari, Semarang</h3>
+                <div class="project-slider swiper projectSwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide project-slide">
+                            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="project-image" alt="Rumah Semarang 1">
+                        </div>
+                        <div class="swiper-slide project-slide">
+                            <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="project-image" alt="Rumah Semarang 2">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p class="project-description"><strong>Spesifikasi:</strong> 4 kamar tidur, 3 kamar mandi, ruang keluarga luas. <strong>Waktu pengerjaan:</strong> 4 bulan (tepat sesuai jadwal). <strong>Klien berkata:</strong> "Proses pembangunan sangat transparan dan komunikatif!"</p>
+            </div>
+
+            <!-- PROYEK 3: RENOVASI KAFE JEPARA -->
+            <div class="project-container">
+                <h3 class="project-title">Renovasi Kafe - T Cafe Jepara</h3>
+                <div class="project-slider swiper projectSwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide project-slide">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="project-image" alt="Kafe Jepara 1">
+                        </div>
+                        <div class="swiper-slide project-slide">
+                            <img src="https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="project-image" alt="Kafe Jepara 2">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p class="project-description"><strong>Konsep:</strong> Industrial modern dengan finishing premium. <strong>Waktu pengerjaan:</strong> 6 minggu. <strong>Klien berkata:</strong> "Detail pengerjaan sangat rapi, sesuai dengan ekspektasi desain kami."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO SECTION (Tempat untuk video profil) -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lihat Sendiri Proses Kerja Kami</h2>
+                <p>Video testimoni langsung dari klien dan dokumentasi proyek</p>
+            </div>
+
+            <!-- VIDEO PROFIL -->
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_ANDA" title="Video Profil Asia Engineer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p style="text-align: center; color: #666; margin-top: 20px;"><strong>Testimoni Klien:</strong> "Asia Engineer mengubah kekhawatiran saya menjadi kepuasan!" - Pak Budi, Klien Renovasi Atap</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONUS SECTION (Penawaran spesial) -->
+    <section id="bonus" class="container">
+        <div class="section-title">
+            <h2>Bonus Eksklusif untuk Proyek Anda</h2>
+            <p>Nilai tambah senilai <strong>Rp 7.500.000</strong> yang Anda dapatkan GRATIS</p>
+        </div>
+        
+        <div class="bonus-grid">
+            <div class="bonus-card">
+                <div class="bonus-image">
+                    <img src="konsultasi-desain.png" alt="Konsultasi Desain">
+                </div>
+                <div class="bonus-content">
+                    <span class="bonus-tag">BONUS 1</span>
+                    <h3>Konsultasi Desain + 3D Visual</h3>
+                    <p>Visualisasi 3D proyek Anda sebelum mulai, sehingga Anda bisa "melihat" hasil akhirnya terlebih dahulu.</p>
+                    <p><strong>Nilai:</strong> Rp 3.500.000</p>
+                </div>
+            </div>
+            
+            <div class="bonus-card">
+                <div class="bonus-image">
+                    <img src="diskon-material.png" alt="Material Premium">
+                </div>
+                <div class="bonus-content">
+                    <span class="bonus-tag">BONUS 2</span>
+                    <h3>Material Premium</h3>
+                    <p>Akses ke harga supplier langsung untuk material pilihan berkualitas tertinggi di pasaran.</p>
+                    <p><strong>Hemat hingga:</strong> Rp 2.500.000</p>
+                </div>
+            </div>
+            
+            <div class="bonus-card">
+                <div class="bonus-image">
+                    <img src="garansi-asuransi.png" alt="Garansi Tambahan">
+                </div>
+                <div class="bonus-content">
+                    <span class="bonus-tag">BONUS 3</span>
+                    <h3>Garansi 2 Tahun + Asuransi</h3>
+                    <p>Perlindungan ekstra dengan garansi terlama di industri ditambah asuransi kecelakaan kerja.</p>
+                    <p><strong>Nilai:</strong> Rp 1.200.000</p>
+                </div>
+            </div>
+            
+            <div class="bonus-card">
+                <div class="bonus-image">
+                    <img src="gratis-pembersihan.png" alt="Pembersihan Profesional">
+                </div>
+                <div class="bonus-content">
+                    <span class="bonus-tag">BONUS 4</span>
+                    <h3>Pembersihan Profesional</h3>
+                    <p>Rumah Anda akan bersih seperti hotel bintang 5 setelah proyek selesai. Siap huni langsung!</p>
+                    <p><strong>Nilai:</strong> Rp 1.500.000</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align:center; margin-top:40px; background:#fef6ec; padding:25px; border-radius:15px;">
+            <p style="color:#555; font-size:1.1rem;"><strong>Total nilai bonus:</strong> <span style="text-decoration:line-through; color:#999; font-size:1.3rem;">Rp 8.700.000</span> <span style="color:#e67e22; font-weight:bold; font-size:1.5rem;">GRATIS untuk Anda!</span></p>
+            <p style="color:#666; margin-top:10px;"><em>*Bonus berlaku untuk proyek di atas Rp 100 juta yang booking via landing page ini</em></p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION (Bukti sosial) -->
+    <section id="testimonial" class="social-proof">
+        <div class="container">
+            <div class="section-title">
+                <h2>Apa Kata Klien Kami?</h2>
+                <p>864+ klien telah membuktikan kualitas dan profesionalisme Asia Engineer</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Saya sudah panggil 3 kontraktor sebelumnya untuk atap bocor. Hanya Asia Engineer yang benar-benar menyelesaikan masalah. Sudah 2 tahun tidak ada rembesan lagi!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">B</div>
+                        <div class="author-info">
+                            <h4>Budi Santoso</h4>
+                            <p>Wiraswasta, Klien Renovasi Atap</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Proyek cafe kami selesai tepat waktu dengan detail yang sempurna. Yang paling saya suka: komunikasi tim Asia Engineer sangat responsif 24/7!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <h4>Sari Dewi</h4>
+                            <p>Pemilik T Cafe, Klien 2 Proyek</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Dari Instagram ke landing page, lalu konsultasi gratis. Prosesnya smooth! Hasil renovasi rumah 2 lantai saya melebihi ekspektasi. Recommended banget!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Agus Setiawan</h4>
+                            <p>PNS, Klien Bangun Rumah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://www.instagram.com/asia.engineer/" target="_blank" class="btn">
+                    <i class="fab fa-instagram"></i> Lihat Testimoni di Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFER SECTION (Penawaran utama) -->
+    <section id="offer" class="container">
+        <div class="section-title">
+            <h2>Konsultasi Proyek GRATIS</h2>
+            <p>Tanpa biaya, tanpa kewajiban. Hanya 10 slot tersisa bulan ini!</p>
+        </div>
+        
+        <div class="offer-container">
+            <h2>KONSULTASI GRATIS + 3D VISUAL</h2>
+            <p>Khusus untuk Anda yang membaca landing page ini</p>
+            
+            <div class="offer-price">
+                0
+            </div>
+            
+            <p style="margin-bottom:30px; font-size:1.2rem;">Anda akan mendapatkan <strong>5 manfaat</strong> ini GRATIS:</p>
+            
+            <div style="text-align:left; max-width:600px; margin:0 auto 30px; color:rgba(255, 255, 255, 0.95); font-size:1.1rem;">
+                <p><i class="fas fa-check-circle" style="color:#2ecc71; margin-right:10px;"></i> <strong>Analisis mendalam</strong> kebutuhan proyek Anda</p>
+                <p><i class="fas fa-check-circle" style="color:#2ecc71; margin-right:10px;"></i> <strong>Estimasi biaya akurat</strong> tanpa markup tersembunyi</p>
+                <p><i class="fas fa-check-circle" style="color:#2ecc71; margin-right:10px;"></i> <strong>3D visualisasi</strong> proyek sebelum mulai</p>
+                <p><i class="fas fa-check-circle" style="color:#2ecc71; margin-right:10px;"></i> <strong>Timeline realistis</strong> dengan buffer waktu aman</p>
+                <p><i class="fas fa-check-circle" style="color:#2ecc71; margin-right:10px;"></i> <strong>Rekomendasi material</strong> terbaik untuk budget Anda</p>
+            </div>
+            
+            <!-- TOMBUL WHATSAPP DENGAN PESAN OTOMATIS -->
+            <a href="https://wa.me/6282118107431?text=Halo%20Asia%20Engineer%2C%20saya%20tertarik%20dengan%20layanan%20Anda%20setelah%20melihat%20landing%20page%20ini.%20Saya%20ingin%20konsultasi%20GRATIS%20dan%203D%20visualisasi%20untuk%20proyek%20%5Bsebutkan%20jenis%20proyek%5D%20saya.%20Apakah%20masih%20ada%20slot%20konsultasi%20gratis%20bulan%20ini%3F" class="btn btn-large btn-whatsapp" style="margin-bottom:20px; font-size:1.2rem;"><i class="fab fa-whatsapp"></i> KLAIM KONSULTASI GRATIS SEKARANG</a>
+            
+            <p style="font-size:0.9rem; opacity:0.9;"><i class="fas fa-clock"></i> Hanya 10 slot tersisa bulan ini • Booking via WhatsApp di atas</p>
+            <p style="font-size:0.9rem; opacity:0.9; margin-top:10px;"><i class="fas fa-info-circle"></i> <strong>PENTING:</strong> Pesan WhatsApp otomatis memberitahu kami Anda datang dari landing page ini</p>
+        </div>
+    </section>
+
+    <!-- HANDLING OBJECTION SECTION (Mengatasi keraguan) -->
+    <section id="objection" class="handling-objection">
+        <div class="container">
+            <div class="objection-content">
+                <h2>Masih Ragu Memilih Kontraktor?</h2>
+                <p>Memilih kontraktor untuk proyek properti adalah keputusan <span class="highlight">besar dengan risiko tinggi</span>.</p>
+                <p>Bayangkan jika anda SALAH memilih kontraktor: <span class="highlight">biaya membengkak, waktu molor, stres meningkat, dan hasilnya mengecewakan.</span></p>
+                
+                <div style="background:white; padding:25px; border-radius:15px; margin:30px 0; box-shadow:0 5px 15px rgba(0,0,0,0.05);">
+                    <h3 style="color:#e67e22; margin-bottom:15px;">"Bukannya Saya Tidak Percaya, Tapi..."</h3>
+                    <p>Itu wajar. Itulah mengapa kami memberikan <span class="highlight">KONSULTASI GRATIS</span> terlebih dahulu.</p>
+                    <p>Anda bisa menguji<span class ="highlight"> profesionalisme </span> kami tanpa mengeluarkan uang sepeserpun.</p>
+                </div>
+                
+                <p><span class="highlight">"Kualitas terlihat dari konsistensi, bukan dari janji."</span></p>
+                <p>Dengan Asia Engineer, Anda mendapatkan <strong>pengalaman tim profesional</strong> yang telah mengerjakan 63+ proyek dengan hasil memuaskan.</p>
+                <p style="font-size:1.5rem; font-weight:bold; color:#e67e22; margin-top:30px;">Investasi dalam kontraktor yang tepat adalah <span class="highlight">jaminan ketenangan pikiran</span> selama proses dan kepuasan jangka panjang.</p>
+                
+                <a href="https://wa.me/6282118107431?text=Halo%20Asia%20Engineer%2C%20saya%20mau%20konsultasi%20GRATIS%20dulu%20sebelum%20memutuskan.%20Bisa%20dijadwalkan%20kapan%3F" class="btn btn-large" style="margin-top:30px; font-size:1.2rem;">COBA KONSULTASI GRATIS DULU</a>
+                <p style="color:#666; margin-top:15px; font-size:0.9rem;">Tanpa biaya, tanpa kewajiban. Cukup 30 menit waktu Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Informasi kontak) -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Asia Engineer</h3>
+                    <p style="color:#bdc3c7;">Kontraktor profesional spesialis bangun & renovasi properti residensial dan komersial dengan garansi 2 tahun.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/asia.engineer/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@asia_engineer" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/6282118107431" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Hubungi Kami</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone-alt"></i> 0821-1810-7431 (Office)</p>
+                        <p><i class="fas fa-envelope"></i> info@asiaengineer.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kantor: Semarang, Jawa Tengah</p>
+                        <p><i class="fas fa-map-marked-alt"></i> Area Layanan: Temanggung, Semarang, Jogja Dan Sekitarnya</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Layanan Unggulan</h3>
+                    <p style="margin-bottom:8px;">✓ Bangun Rumah Baru</p>
+                    <p style="margin-bottom:8px;">✓ Renovasi Total & Parsial</p>
+                    <p style="margin-bottom:8px;">✓ Kontraktor Komersial</p>
+                    <p style="margin-bottom:8px;">✓ Pembuatan Interior</p>
+                    <p style="margin-bottom:8px;">✓ Perbaikan Struktur Bangunan</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Asia Engineer. Hak cipta dilindungi undang-undang.</p>
+                <p style="margin-top:10px; font-size:0.8rem;">Follow untuk update proyek: @asia.engineer | WhatsApp: 0821-1810-7431</p>
+                <p style="margin-top:5px; font-size:0.8rem; color:#e67e22;"><strong>Konsultasi Gratis hanya melalui landing page ini</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // ============================================
+        // INITIALIZE SWIPER FOR PORTFOLIO SLIDERS
+        // ============================================
+        const projectSwipers = [];
+        
+        document.querySelectorAll('.project-slider').forEach((slider, index) => {
+            const swiper = new Swiper(slider, {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                speed: 800,
+                effect: 'slide',
+                pagination: {
+                    el: slider.querySelector('.swiper-pagination'),
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                navigation: {
+                    nextEl: slider.querySelector('.swiper-button-next'),
+                    prevEl: slider.querySelector('.swiper-button-prev'),
+                },
+            });
+            projectSwipers.push(swiper);
+        });
+        
+        // ============================================
+        // SMOOTH SCROLLING FOR ANCHOR LINKS
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ============================================
+        // WHATSAPP CLICK TRACKING
+        // ============================================
+        function trackWhatsAppClick(source) {
+            localStorage.setItem('asiaEngineerSource', 'landing-page-v2');
+            console.log('User datang dari landing page Asia Engineer');
+        }
+        
+        document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach(button => {
+            button.addEventListener('click', function() {
+                trackWhatsAppClick('landing-page');
+            });
+        });
+        
+        // ============================================
+        // FUNCTION TO CHANGE LOGO
+        // ============================================
+        function changeLogo(newLogoUrl) {
+            const logoImage = document.getElementById('logo-image');
+            if (logoImage) {
+                logoImage.src = newLogoUrl;
+                console.log('Logo berhasil diganti');
+            }
+        }
+        
+        // ============================================
+        // FUNCTION TO ADD NEW PROJECT
+        // ============================================
+        function addNewProject(title, images, description) {
+            const portfolioSection = document.getElementById('portfolio');
+            const container = portfolioSection.querySelector('.container');
+            
+            const newProjectId = 'projectSwiper' + (projectSwipers.length + 1);
+            
+            const newProjectHTML = `
+                <div class="project-container">
+                    <h3 class="project-title">${title}</h3>
+                    <div class="project-slider swiper ${newProjectId}">
+                        <div class="swiper-wrapper">
+                            ${images.map(img => `
+                                <div class="swiper-slide project-slide">
+                                    <img src="${img.url}" class="project-image" alt="${img.alt}">
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <p class="project-description">${description}</p>
+                </div>
+            `;
+            
+            // Find the last project container
+            const projectContainers = container.querySelectorAll('.project-container');
+            const lastProject = projectContainers[projectContainers.length - 1];
+            
+            // Insert after the last project
+            lastProject.insertAdjacentHTML('afterend', newProjectHTML);
+            
+            // Initialize new swiper
+            const newSwiper = new Swiper(`.${newProjectId}`, {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: `.${newProjectId} .swiper-pagination`,
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: `.${newProjectId} .swiper-button-next`,
+                    prevEl: `.${newProjectId} .swiper-button-prev`,
+                },
+            });
+            
+            projectSwipers.push(newSwiper);
+            console.log('Proyek baru berhasil ditambahkan');
+        }
+        
+        // ============================================
+        // ANIMATE STATS COUNTER
+        // ============================================
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            statNumbers.forEach(stat => {
+                const text = stat.textContent;
+                const suffix = text.includes('+') ? '+' : '';
+                const target = parseInt(text.replace('+', ''));
+                
+                let start = 0;
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                
+                const timer = setInterval(() => {
+                    start += increment;
+                    if (start >= target) {
+                        stat.textContent = target + suffix;
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(start) + suffix;
+                    }
+                }, 16);
+            });
+        }
+        
+        // Run animation when stats section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+        // ============================================
+// HEADER EFFECT ON SCROLL
+// ============================================
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    const headerContainer = document.querySelector('.header-container');
+    const logoImage = document.querySelector('.logo-image');
+    
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+        if (logoImage) {
+            logoImage.style.width = '50px';
+            logoImage.style.height = '50px';
+            logotext.style.width = '50px';
+            logotext.style.height = '50px';
+        }
+    } else {
+        header.classList.remove('scrolled');
+        if (logoImage) {
+            logoImage.style.width = '60px';
+            logoImage.style.height = '60px';
+            logotext.style.width = '60px';
+            logotext.style.height = '60px';
+        }
+    }
+});
+    </script>
+</body>
+</html>
